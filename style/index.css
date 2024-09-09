@@ -39,22 +39,22 @@ main{
     transform: translate(-50%, 0);
     width: 100%;
     min-width: 375px;
-    max-width: 800px;
+    max-width: 768px;
     height: auto; 
     background-color: var(--crl-card);
 }
-.contain{
+.card{
     padding: 30px;
     font-family: var(--fnt-text);
     font-weight: 400;
     color: var(--crl-text);
     line-height: 25px;
     h1{
-        font-size: 30px;
-        margin-bottom: 15px;
+        font-size: calc(.5vw + 32px);
+        margin-bottom: 22px;
         font-weight: 400;
         font-family: var(--fnt-title);
-        line-height: 30px;
+        line-height: 32px;
         color: var(--crl-title);
     }
     h2 {
@@ -125,11 +125,10 @@ main{
 }
 .image{
     width: 100%;
-    max-width: 740px;
+    max-width: 708px;
     object-fit: cover;
     position: relative;
     left: 50%;
-    /* border-radius: 10px; */
     transform: translate(-50%, 0px);
 }
 .ingredients, .instructions{
@@ -138,11 +137,23 @@ main{
         font-weight: 600;
     }
 }
-footer { 
-    font-size: 11px; 
+footer {
+    margin: 20px auto;
     text-align: center;
-    a { 
-        color: hsl(228, 45%, 44%); 
+    a{
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
     }
+}
+
+@media (min-width: 800px){
+        main{
+           margin: 100px 0px;
+        }
+        .image{
+            margin-top: 30px;
+            border-radius: 12px;
+        }
+    
 }
 
