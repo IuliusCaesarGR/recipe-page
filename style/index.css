@@ -124,7 +124,7 @@ main{
 }
 .image{
     width: 100%;
-    max-width: 698px;
+    max-width: 688px;
     object-fit: cover;
     position: relative;
     left: 50%;
